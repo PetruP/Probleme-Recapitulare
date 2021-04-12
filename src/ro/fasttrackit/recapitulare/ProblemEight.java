@@ -2,6 +2,7 @@ package ro.fasttrackit.recapitulare;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ProblemEight {
     public static void main(String[] args) {
@@ -15,6 +16,15 @@ public class ProblemEight {
         System.out.println(beginWithB("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
         char str[] = {'a', 'b', 'c'};
         subString(str, str.length);
+
+        //random letter
+        Random rand = new Random();
+        int randomElement = rand.nextInt(list.size());
+        String chosenElement = list.get(randomElement);
+        int randomLetter = rand.nextInt(chosenElement.length());
+        char chosenLetter = chosenElement.charAt(randomLetter);
+        System.out.println("chosen letter: " + chosenLetter + " from this word " + chosenElement);
+
 
         //For any string containing r, replace it with *
         String S1 = new String("Lorem ipsum dolor sit amet, consectetur");
