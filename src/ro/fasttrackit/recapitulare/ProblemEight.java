@@ -22,16 +22,13 @@ public class ProblemEight {
         System.out.println("String after replacing all 'r' with '*': " + S1.replace('r', '*'));
 
         //Print the first 3 characters of each string
-        String input = "123456789";     //input string
-        String firstThreeChars = "";
-
-        if (input.length() > 3) {
-            firstThreeChars = input.substring(0, 3);
+        for (String element: list) {
+            if (element.length() > 3) {
+                System.out.println(element.substring(0, 3));
+            } else {
+                System.out.println(element);
+            }
         }
-        else {
-            firstThreeChars = input;
-        }
-        System.out.println(firstThreeChars);
 
     }
 
